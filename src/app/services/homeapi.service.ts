@@ -17,5 +17,8 @@ export class HomeapiService {
     return this.httpClient.get(this.baseUrl+'ComingSoon/' + environment.apiKey)
 
   }
+  getInTheaters():Observable<any>{
+    return this.httpClient.get(this.baseUrl+ 'InTheaters/' + environment.apiKey)
+  }
 
 }

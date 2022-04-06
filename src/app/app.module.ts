@@ -8,10 +8,12 @@ import { HomeComponent } from './home/home.component';
 import { HomeapiService } from './services/homeapi.service';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    
   ],
   imports: [
     BrowserModule,

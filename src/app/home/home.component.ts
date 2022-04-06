@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HomeapiService } from '../services/homeapi.service';
 import { HomeApiClass } from '../classes/home-api-class';
+import { TheaterApiClass } from '../classes/theater-api-class';
 
 @Component({
   selector: 'app-home',
@@ -13,19 +14,36 @@ export class HomeComponent implements OnInit {
 
    }
    lstUpComingMovies: HomeApiClass[] | any;
+   lstOfThearters: TheaterApiClass[] | any;
 
   ngOnInit(){
+
+    // Coming Movies Function
+
     this.HomeapiService.getUpComingMovies()
     .subscribe
     (
       data=>
       {
         this.lstUpComingMovies= data.items;
-        console.log(data)
+       
 
       }
 
     );
+
+    // Thearter Movies function
+
+    this.HomeapiService.getInTheaters()
+    .subscribe
+    (
+      data=>{
+        this.lstOfThearters=data.items;
+        console.log(data)
+      }
+    );
+
+
   }
 
 }
