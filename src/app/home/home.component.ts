@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { HomeapiService } from '../services/homeapi.service';
 import { HomeApiClass } from '../classes/home-api-class';
 import { TheaterApiClass } from '../classes/theater-api-class';
+import { PopularTvApi } from '../classes/popular-tv-api-class';
+import { PopularMoviesApi } from '../classes/popular-movies-api-class';
 
 @Component({
   selector: 'app-home',
@@ -15,6 +17,8 @@ export class HomeComponent implements OnInit {
    }
    lstUpComingMovies: HomeApiClass[] | any;
    lstOfThearters: TheaterApiClass[] | any;
+   lstOfPopularTvs: PopularTvApi[] | any;
+   lstOfPopularMovies: PopularMoviesApi[] | any;
 
   ngOnInit(){
 
@@ -41,6 +45,34 @@ export class HomeComponent implements OnInit {
         this.lstOfThearters=data.items;
         console.log(data)
       }
+    );
+
+    // Popular Tv Shows Function
+
+    this.HomeapiService.getPopularTv()
+    .subscribe
+    (
+      data=>
+      {
+        this. lstOfPopularTvs= data.items;
+       
+
+      }
+
+    );
+
+    // Popular  Movies Function
+
+    this.HomeapiService.getPopularMovies()
+    .subscribe
+    (
+      data=>
+      {
+        this.lstOfPopularMovies= data.items;
+       
+
+      }
+
     );
 
 

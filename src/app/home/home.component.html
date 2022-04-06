@@ -1,6 +1,8 @@
+<!-- Displaying Coming Soon Movies -->
 <h2>Coming Soon</h2>
+
 <ul *ngFor = "let upcome of lstUpComingMovies">
-    <li>{{upcome.id}}</li>
+    <!-- <li>{{upcome.id}}</li> -->
     <li>{{upcome.title}}</li>
     <li>{{upcome.year}}</li>
     <li>{{upcome.releaseState}}</li>
@@ -10,9 +12,11 @@
     
 </ul>
 
+<!-- Displaying InThearters Movies -->
+
 <h2>In Thearters</h2>
 <ul *ngFor = "let intheat of lstOfThearters">
-    <li>{{intheat.id}}</li>
+    <!-- <li>{{intheat.id}}</li> -->
     <li>{{intheat.title}}</li>
     <li>{{intheat.year}}</li>
     <li>{{intheat.releaseState}}</li>
@@ -21,3 +25,26 @@
 
     
 </ul>
+
+<!-- Displaying Popular Movies and Tv shows -->
+<h2>Popular</h2>
+<ul *ngFor = "let poptv of lstOfPopularTvs">
+    <!-- <li>{{intheat.id}}</li> -->
+    <li>{{poptv.title}}</li>
+    <li>{{poptv.year}}</li>
+    <li>{{poptv.image}}</li>
+    
+
+    
+</ul>
+
+<ul *ngFor = "let popmovie ofmoviestOfPopularMovies">
+    <!-- <li>{{intheat.id}}</li> -->
+    <li>{{popmovie.title}}</li>
+    <li>{{popmovie.year}}</li>
+    <li>{{popmovie.image}}</li>
+    
+
+    
+</ul>
+

@@ -20,5 +20,13 @@ export class HomeapiService {
   getInTheaters():Observable<any>{
     return this.httpClient.get(this.baseUrl+ 'InTheaters/' + environment.apiKey)
   }
+  getPopularTv():Observable<any>{
+    return this.httpClient.get(this.baseUrl+ 'MostPopularTvs/' + environment.apiKey)
+  }
+  getPopularMovies():Observable<any>{
+    return this.httpClient.get(this.baseUrl+ 'MostPopularMovies/' + environment.apiKey)
+  }
+
+
 
 }
