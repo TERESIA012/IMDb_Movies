@@ -9,6 +9,7 @@ import { HomeapiService } from './services/homeapi.service';
 import { MoviesComponent } from './movies/movies.component';
 import { TopmoviesComponent } from './topmovies/topmovies.component';
 import { ToptvsComponent } from './toptvs/toptvs.component';
+import { PopmoviesComponent } from './popmovies/popmovies.component';
 
 
 
@@ -19,6 +20,7 @@ import { ToptvsComponent } from './toptvs/toptvs.component';
     MoviesComponent,
     TopmoviesComponent,
     ToptvsComponent,
+    PopmoviesComponent,
     
   ],
   imports: [
