@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { HomeapiService } from './services/homeapi.service';
 import { MoviesComponent } from './movies/movies.component';
 import { TopmoviesComponent } from './topmovies/topmovies.component';
+import { ToptvsComponent } from './toptvs/toptvs.component';
 
 
 
@@ -17,6 +18,7 @@ import { TopmoviesComponent } from './topmovies/topmovies.component';
     HomeComponent,
     MoviesComponent,
     TopmoviesComponent,
+    ToptvsComponent,
     
   ],
   imports: [
