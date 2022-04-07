@@ -56,6 +56,9 @@ export class MoviesComponent implements OnInit {
     });
 
     // Top 250 Tv Shows
+    this.MoviesapiService.getPopularMovies().subscribe((data) => {
+      this.  lstOfTop250TvShows= data.items;
+    });
 
   }
 }
