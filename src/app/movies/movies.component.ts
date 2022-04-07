@@ -13,6 +13,7 @@ import { Top250TvShowsApi } from '../classes/top250-tv-shows-api-class';
   styleUrls: ['./movies.component.css'],
 })
 export class MoviesComponent implements OnInit {
+  
   constructor(private MoviesapiService: MoviesapiService) {}
 
   lstUpComingMovies: HomeApiClass[] | any;

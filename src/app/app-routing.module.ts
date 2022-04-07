@@ -5,6 +5,7 @@ import { MoviesComponent } from './movies/movies.component';
 import { TopmoviesComponent } from './topmovies/topmovies.component';
 import { ToptvsComponent } from './toptvs/toptvs.component';
 import { PopmoviesComponent } from './popmovies/popmovies.component';
+import { PoptvsComponent } from './poptvs/poptvs.component';
 
 
 const routes: Routes = [
@@ -13,6 +14,9 @@ const routes: Routes = [
   { path:'',component:TopmoviesComponent },
   { path:'',component:ToptvsComponent },
   { path:'',component:PopmoviesComponent },
+  { path:'',component:PoptvsComponent },
+
+  
 
 ];
 
