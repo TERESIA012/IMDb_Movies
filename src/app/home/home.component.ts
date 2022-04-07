@@ -43,7 +43,7 @@ export class HomeComponent implements OnInit {
     (
       data=>{
         this.lstOfThearters=data.items;
-        console.log(data)
+        // console.log(data)
       }
     );
 

@@ -1,0 +1,73 @@
+<p>movies works!</p>
+
+
+<!-- Displaying Coming Soon Movies -->
+<h2>Coming Soon</h2>
+
+<ul *ngFor = "let upcome of lstUpComingMovies">
+    <!-- <li>{{upcome.id}}</li> -->
+    <li>{{upcome.title}}</li>
+    <li>{{upcome.year}}</li>
+    <li>{{upcome.releaseState}}</li>
+    <li>{{upcome.image}}</li>
+    <li>{{upcome.genres}}</li>
+
+    
+</ul>
+
+<!-- Displaying Top 250 Movies -->
+
+<ul *ngFor = "let topmovies of lstOfTop250Movies">
+    <!-- <li>{{intheat.id}}</li> -->
+    <li>{{topmovies.title}}</li>
+    <li>{{topmovies.year}}</li>
+    <li>{{topmovies.image}}</li>
+    
+
+    
+</ul>
+
+<!-- Displaying Top 250 Tv Shows -->
+
+
+
+
+<!-- Displaying Popular Movies -->
+<ul *ngFor = "let popmovie of lstOfPopularMovies">
+    <!-- <li>{{intheat.id}}</li> -->
+    <li>{{popmovie.title}}</li>
+    <li>{{popmovie.year}}</li>
+    <li>{{popmovie.image}}</li>
+    
+
+    
+</ul>
+
+
+<!-- Displaying Popular Tv Shows -->
+<h2>Popular  Tv Shows</h2>
+<ul *ngFor = "let poptv of lstOfPopularTvs">
+    <!-- <li>{{intheat.id}}</li> -->
+    <li>{{poptv.title}}</li>
+    <li>{{poptv.year}}</li>
+    <li>{{poptv.image}}</li>
+    
+
+    
+</ul>
+
+
+<!-- Displaying InThearters Movies -->
+
+<h2>In Thearters</h2>
+<ul *ngFor = "let intheat of lstOfThearters">
+    <!-- <li>{{intheat.id}}</li> -->
+    <li>{{intheat.title}}</li>
+    <li>{{intheat.year}}</li>
+    <li>{{intheat.releaseState}}</li>
+    <li>{{intheat.image}}</li>
+    <li>{{intheat.genres}}</li>
+
+    
+</ul>
+
