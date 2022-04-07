@@ -20,7 +20,7 @@ export class MoviesComponent implements OnInit {
   lstOfPopularTvs: PopularTvApi[] | any;
   lstOfPopularMovies: PopularMoviesApi[] | any;
   lstOfTop250Movies:  Top250MoviesApi[] | any;
-  lstOfTop250TvShows:  Top250MoviesApi[] | any;
+  lstOfTop250TvShows:  Top250TvShowsApi[] | any;
   
 
   ngOnInit() {
@@ -51,12 +51,12 @@ export class MoviesComponent implements OnInit {
 
     // Top 250 Movies
 
-    this.MoviesapiService.getPopularMovies().subscribe((data) => {
-      this. lstOfTop250Movies= data.items;
+    this.MoviesapiService.getTop250Movies().subscribe((data) => {
+      this.lstOfTop250Movies= data.items;
     });
 
     // Top 250 Tv Shows
-    this.MoviesapiService.getPopularMovies().subscribe((data) => {
+    this.MoviesapiService.getTop250TvShows().subscribe((data) => {
       this.  lstOfTop250TvShows= data.items;
     });
 

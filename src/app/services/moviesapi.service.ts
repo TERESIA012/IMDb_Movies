@@ -27,6 +27,9 @@ export class MoviesapiService {
     return this.httpClient.get(this.baseUrl+ 'MostPopularMovies/' + environment.apiKey)
   }
   getTop250Movies():Observable<any>{
-    return this.httpClient.get(this.baseUrl+ 'Top250MoviesMovies/' + environment.apiKey)
+    return this.httpClient.get(this.baseUrl+ 'Top250Movies/' + environment.apiKey)
+  }
+  getTop250TvShows():Observable<any>{
+    return this.httpClient.get(this.baseUrl+ 'Top250TVs/' + environment.apiKey)
   }
 }

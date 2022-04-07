@@ -7,6 +7,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
 import { HomeapiService } from './services/homeapi.service';
 import { MoviesComponent } from './movies/movies.component';
+import { TopmoviesComponent } from './topmovies/topmovies.component';
 
 
 
@@ -15,6 +16,7 @@ import { MoviesComponent } from './movies/movies.component';
     AppComponent,
     HomeComponent,
     MoviesComponent,
+    TopmoviesComponent,
     
   ],
   imports: [
