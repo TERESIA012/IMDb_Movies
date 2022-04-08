@@ -1,50 +1,57 @@
 <!-- Displaying Coming Soon Movies -->
 <h2>Coming Soon</h2>
+<div class="row">
+    <div class="card mb-2" *ngFor="let upcome of lstUpComingMovies" style="width: 18rem;">
+        <div class="card-body" >
+          <img src="{{upcome.image}}" class="card-img-top" alt="..." height="250">
+          <h5 class="card-title">{{upcome.title}}</h5>
+          <h6 class="card-subtitle mb-2 text-dark">{{upcome.year}}</h6>
+        </div>
+      </div>
+</div>
 
-<ul *ngFor = "let upcome of lstUpComingMovies">
-    <!-- <li>{{upcome.id}}</li> -->
-    <li>{{upcome.title}}</li>
-    <li>{{upcome.year}}</li>
-    <li>{{upcome.releaseState}}</li>
-    <li>{{upcome.image}}</li>
-    <li>{{upcome.genres}}</li>
-
-    
-</ul>
-
+   
 <!-- Displaying InThearters Movies -->
-
 <h2>In Thearters</h2>
-<ul *ngFor = "let intheat of lstOfThearters">
-    <!-- <li>{{intheat.id}}</li> -->
-    <li>{{intheat.title}}</li>
-    <li>{{intheat.year}}</li>
-    <li>{{intheat.releaseState}}</li>
-    <li>{{intheat.image}}</li>
-    <li>{{intheat.genres}}</li>
 
-    
-</ul>
+<div class="row">
+   
+<div class="card mb-2" *ngFor="let intheat of lstOfThearters" style="width: 18rem;">
+  <div class="card-body" >
+    <img src="{{intheat.image}}" class="card-img-top" alt="..." height="250">
+    <h5 class="card-title">{{intheat.title}}</h5>
+    <h6 class="card-subtitle mb-2 text-dark">{{intheat.year}}</h6>
+  </div>
+</div>
+</div>
+
+
 
 <!-- Displaying Popular Movies and Tv shows -->
+
 <h2>Popular</h2>
-<ul *ngFor = "let poptv of lstOfPopularTvs">
-    <!-- <li>{{intheat.id}}</li> -->
-    <li>{{poptv.title}}</li>
-    <li>{{poptv.year}}</li>
-    <li>{{poptv.image}}</li>
-    
+<div class="row">
+    <div class="card mb-2" *ngFor="let poptv of lstOfPopularTvs" style="width: 18rem;">
+        <div class="card-body" >
+          <img src="{{poptv.image}}" class="card-img-top" alt="..." height="250">
+          <h5 class="card-title">{{poptv.title}}</h5>
+          <h6 class="card-subtitle mb-2 text-dark">{{poptv.year}}</h6>
+        </div>
+      </div>
+</div>
 
-    
-</ul>
 
-<ul *ngFor = "let popmovie ofmoviestOfPopularMovies">
-    <!-- <li>{{intheat.id}}</li> -->
-    <li>{{popmovie.title}}</li>
-    <li>{{popmovie.year}}</li>
-    <li>{{popmovie.image}}</li>
-    
+<div class="row">
+    <div class="card mb-2"  *ngFor="let popmovie of lstOfPopularMovies" style="width: 18rem;">
+        <div class="card-body" >
+          <img src="{{popmovie.image}}" class="card-img-top" alt="..." height="250">
+          <h5 class="card-title">{{popmovie.title}}</h5>
+          <h6 class="card-subtitle mb-2 text-dark">{{popmovie.year}}</h6>
+        </div>
+      </div>
+</div>
+  
 
-    
-</ul>
+
+
 

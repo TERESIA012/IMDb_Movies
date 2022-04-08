@@ -1,86 +1,81 @@
-<p>movies works!</p>
-
-
 <!-- Displaying Coming Soon Movies -->
 <h2>Coming Soon</h2>
-
-<ul *ngFor = "let upcome of lstUpComingMovies">
-    <!-- <li>{{upcome.id}}</li> -->
-    <li>{{upcome.title}}</li>
-    <li>{{upcome.year}}</li>
-    <li>{{upcome.releaseState}}</li>
-    <li>{{upcome.image}}</li>
-    <li>{{upcome.genres}}</li>
-
-    
-</ul>
+<div class="row">
+    <div class="card mb-2" *ngFor="let upcome of lstUpComingMovies" style="width: 18rem;">
+        <div class="card-body" >
+          <img src="{{upcome.image}}" class="card-img-top" alt="..." height="250">
+          <h5 class="card-title">{{upcome.title}}</h5>
+          <h6 class="card-subtitle mb-2 text-dark">{{upcome.year}}</h6>
+        </div>
+      </div>
+</div>
 
 <!-- Displaying Top 250 Movies -->
-<h2>Top 250 TV Movies</h2>
-
-<ul *ngFor = "let topmovies of lstOfTop250Movies">
-    <!-- <li>{{intheat.id}}</li> -->
-    <li>{{topmovies.title}}</li>
-    <li>{{topmovies.year}}</li>
-    <li>{{topmovies.image}}</li>
-    
-
-    
-</ul>
+<h2>Top 250 Movies</h2>
+<div class="row">
+    <div class="card mb-2" *ngFor = "let topmovies of lstOfTop250Movies" style="width: 18rem;">
+        <div class="card-body" >
+          <img src="{{topmovies.image}}" class="card-img-top" alt="..." height="250">
+          <h5 class="card-title">{{topmovies.title}}</h5>
+          <h6 class="card-subtitle mb-2 text-dark">{{topmovies.year}}</h6>
+        </div>
+      </div>
+</div>
 
 <!-- Displaying Top 250 Tv Shows -->
 <h2>Top 250 TV Shows</h2>
+<div class="row">
+    <div class="card mb-2"  *ngFor = "let toptv of lstOfTop250TvShows" style="width: 18rem;">
+        <div class="card-body" >
+          <img src="{{toptv.image}}" class="card-img-top" alt="..." height="250">
+          <h5 class="card-title">{{toptv.title}}</h5>
+          <h6 class="card-subtitle mb-2 text-dark">{{toptv.year}}</h6>
+        </div>
+      </div>
+</div>
 
-<ul *ngFor = "let toptv of lstOfTop250TvShows">
-    <!-- <li>{{intheat.id}}</li> -->
-    <li>{{toptv.title}}</li>
-    <li>{{toptv.year}}</li>
-    <li>{{toptv.image}}</li>
-    
-
-    
-</ul>
 
 
 
 
 <!-- Displaying Popular Movies -->
 <h2>Popular  Movies</h2>
-<ul *ngFor = "let popmovie of lstOfPopularMovies">
-    <!-- <li>{{intheat.id}}</li> -->
-    <li>{{popmovie.title}}</li>
-    <li>{{popmovie.year}}</li>
-    <li>{{popmovie.image}}</li>
-    
 
-    
-</ul>
+<div class="row">
+    <div class="card mb-2"  *ngFor="let popmovie of lstOfPopularMovies" style="width: 18rem;">
+        <div class="card-body" >
+          <img src="{{popmovie.image}}" class="card-img-top" alt="..." height="250">
+          <h5 class="card-title">{{popmovie.title}}</h5>
+          <h6 class="card-subtitle mb-2 text-dark">{{popmovie.year}}</h6>
+        </div>
+      </div>
+</div>
 
 
 <!-- Displaying Popular Tv Shows -->
 <h2>Popular  Tv Shows</h2>
-<ul *ngFor = "let poptv of lstOfPopularTvs">
-    <!-- <li>{{intheat.id}}</li> -->
-    <li>{{poptv.title}}</li>
-    <li>{{poptv.year}}</li>
-    <li>{{poptv.image}}</li>
-    
+<div class="row">
+    <div class="card mb-2" *ngFor="let poptv of lstOfPopularTvs" style="width: 18rem;">
+        <div class="card-body" >
+          <img src="{{poptv.image}}" class="card-img-top" alt="..." height="250">
+          <h5 class="card-title">{{poptv.title}}</h5>
+          <h6 class="card-subtitle mb-2 text-dark">{{poptv.year}}</h6>
+        </div>
+      </div>
+</div>
 
-    
-</ul>
 
 
 <!-- Displaying InThearters Movies -->
 
 <h2>In Thearters</h2>
-<ul *ngFor = "let intheat of lstOfThearters">
-    <!-- <li>{{intheat.id}}</li> -->
-    <li>{{intheat.title}}</li>
-    <li>{{intheat.year}}</li>
-    <li>{{intheat.releaseState}}</li>
-    <li>{{intheat.image}}</li>
-    <li>{{intheat.genres}}</li>
-
-    
-</ul>
+<div class="row">
+    <div class="card mb-2" *ngFor="let intheat of lstOfThearters" style="width: 18rem;">
+        <div class="card-body" >
+          <img src="{{intheat.image}}" class="card-img-top" alt="..." height="250">
+          <h5 class="card-title">{{intheat.title}}</h5>
+          <h6 class="card-subtitle mb-2 text-dark">{{intheat.year}}</h6>
+        </div>
+      </div>
+</div>
 

@@ -1,1 +1,10 @@
-<p>theater works!</p>
+<h2>In Thearters</h2>
+<div class="row">
+    <div class="card mb-2" *ngFor="let intheat of lstOfThearters" style="width: 18rem;">
+        <div class="card-body" >
+          <img src="{{intheat.image}}" class="card-img-top" alt="..." height="250">
+          <h5 class="card-title">{{intheat.title}}</h5>
+          <h6 class="card-subtitle mb-2 text-dark">{{intheat.year}}</h6>
+        </div>
+      </div>
+</div>

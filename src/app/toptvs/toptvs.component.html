@@ -1,15 +1,16 @@
-<p>toptvs works!</p>
+
 
 
 <!-- Displaying Top 250 Tv Shows -->
 <h2>Top 250 TV Shows</h2>
+<div class="row">
+    <div class="card mb-2"  *ngFor = "let toptv of lstOfTop250TvShows" style="width: 18rem;">
+        <div class="card-body" >
+          <img src="{{toptv.image}}" class="card-img-top" alt="..." height="250">
+          <h5 class="card-title">{{toptv.title}}</h5>
+          <h6 class="card-subtitle mb-2 text-dark">{{toptv.year}}</h6>
+        </div>
+      </div>
+      
+</div>
 
-<ul *ngFor = "let toptv of lstOfTop250TvShows">
-    <!-- <li>{{intheat.id}}</li> -->
-    <li>{{toptv.title}}</li>
-    <li>{{toptv.year}}</li>
-    <li>{{toptv.image}}</li>
-    
-
-    
-</ul>

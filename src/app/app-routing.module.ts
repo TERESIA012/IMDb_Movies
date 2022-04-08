@@ -10,13 +10,13 @@ import { TheaterComponent } from './theater/theater.component';
 
 
 const routes: Routes = [
-  { path:'',component:HomeComponent },
-  { path:'',component:MoviesComponent },
-  { path:'',component:TopmoviesComponent },
-  { path:'',component:ToptvsComponent },
-  { path:'',component:PopmoviesComponent },
-  { path:'',component:PoptvsComponent },
-  { path:'',component:TheaterComponent },
+  { path:'imdb',component:HomeComponent },
+  { path:'movies',component:MoviesComponent },
+  { path:'topmovies',component:TopmoviesComponent },
+  { path:'toptv',component:ToptvsComponent },
+  { path:'popularmovies',component:PopmoviesComponent },
+  { path:'populartv',component:PoptvsComponent },
+  { path:'thearter',component:TheaterComponent },
 
   
 

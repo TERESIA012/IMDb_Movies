@@ -1,13 +1,12 @@
-<p>popmovies works!</p>
-
 <!-- Displaying Popular Movies -->
 <h2>Popular  Movies</h2>
-<ul *ngFor = "let popmovie of lstOfPopularMovies">
-    <!-- <li>{{intheat.id}}</li> -->
-    <li>{{popmovie.title}}</li>
-    <li>{{popmovie.year}}</li>
-    <li>{{popmovie.image}}</li>
-    
 
-    
-</ul>
+<div class="row">
+    <div class="card mb-2"  *ngFor="let popmovie of lstOfPopularMovies" style="width: 18rem;">
+        <div class="card-body" >
+          <img src="{{popmovie.image}}" class="card-img-top" alt="..." height="250">
+          <h5 class="card-title">{{popmovie.title}}</h5>
+          <h6 class="card-subtitle mb-2 text-dark">{{popmovie.year}}</h6>
+        </div>
+      </div>
+</div>

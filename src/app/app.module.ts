@@ -12,6 +12,7 @@ import { ToptvsComponent } from './toptvs/toptvs.component';
 import { PopmoviesComponent } from './popmovies/popmovies.component';
 import { PoptvsComponent } from './poptvs/poptvs.component';
 import { TheaterComponent } from './theater/theater.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 
@@ -25,6 +26,7 @@ import { TheaterComponent } from './theater/theater.component';
     PopmoviesComponent,
     PoptvsComponent,
     TheaterComponent,
+    NavbarComponent,
     
   ],
   imports: [
