@@ -1,1 +1,7 @@
-@import "~bootstrap/dist/css/bootstrap.css"
+
+
+form {
+    position: relative;
+    right: -55rem;
+
+}
