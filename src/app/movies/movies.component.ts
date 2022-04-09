@@ -13,7 +13,7 @@ import { Top250TvShowsApi } from '../classes/top250-tv-shows-api-class';
   styleUrls: ['./movies.component.css'],
 })
 export class MoviesComponent implements OnInit {
-  
+
   constructor(private MoviesapiService: MoviesapiService) {}
 
   lstUpComingMovies: HomeApiClass[] | any;
@@ -41,25 +41,75 @@ export class MoviesComponent implements OnInit {
     // Popular Tv Shows Function
 
     this.MoviesapiService.getPopularTv().subscribe((data) => {
-      this.lstOfPopularTvs = data.items;
-    });
+      // this.lstOfPopularTvs = data.items;
+      this.lstOfPopularTvs= [];
+      for( let i =0 ;i <10; i++){
+        this.lstOfPopularTvs.push(data.items[i])
+
+             
+    }
+
+       
+
+  }
+
+  );
 
     // Popular  Movies Function
 
     this.MoviesapiService.getPopularMovies().subscribe((data) => {
-      this.lstOfPopularMovies = data.items;
-    });
 
+      this.lstOfPopularMovies= [];
+      for( let i =0 ;i <10; i++){
+        this.lstOfPopularMovies.push(data.items[i])
+
+             
+    }
+
+       
+
+  }
+
+  );
+    
     // Top 250 Movies
 
     this.MoviesapiService.getTop250Movies().subscribe((data) => {
-      this.lstOfTop250Movies= data.items;
-    });
+    //   this.lstOfTop250Movies= data.items;
+
+      this.lstOfTop250Movies= [];
+        for( let i =0 ;i <10; i++){
+          this.lstOfTop250Movies.push(data.items[i])
+
+      
+    }
+
+       
+
+  }
+
+  );
+  
 
     // Top 250 Tv Shows
     this.MoviesapiService.getTop250TvShows().subscribe((data) => {
-      this.  lstOfTop250TvShows= data.items;
-    });
+      // this.  lstOfTop250TvShows= data.items;
+      this.lstOfTop250TvShows= [];
+      for( let i =0 ;i <10; i++){
+        this.lstOfTop250TvShows.push(data.items[i])
+
+    
+  }
+
+     
+
+}
+
+);
+
+
+
+
 
   }
 }

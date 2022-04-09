@@ -1,7 +1,7 @@
 <!-- Displaying Coming Soon Movies -->
 <h2>Coming Soon</h2>
 <div class="row">
-    <div class="card mb-2" *ngFor="let upcome of lstUpComingMovies" style="width: 18rem;">
+    <div class="col-md-3 mb-2 mt-2"  *ngFor="let upcome of lstUpComingMovies" style="width: 18rem;">
         <div class="card-body" >
           <img src="{{upcome.image}}" class="card-img-top" alt="..." height="250">
           <h5 class="card-title">{{upcome.title}}</h5>
@@ -12,10 +12,12 @@
 
 <!-- Displaying Top 250 Movies -->
 <h2>Top 250 Movies</h2>
+<a class="nav-item nav-link" routerLink="/topmovies">See all</a>
 <div class="row">
-    <div class="card mb-2" *ngFor = "let topmovies of lstOfTop250Movies" style="width: 18rem;">
+    <div class="col-md-3 mb-2 mt-2"  *ngFor = "let topmovies of lstOfTop250Movies" style="width: 18rem;">
         <div class="card-body" >
           <img src="{{topmovies.image}}" class="card-img-top" alt="..." height="250">
+          
           <h5 class="card-title">{{topmovies.title}}</h5>
           <h6 class="card-subtitle mb-2 text-dark">{{topmovies.year}}</h6>
         </div>
@@ -24,8 +26,9 @@
 
 <!-- Displaying Top 250 Tv Shows -->
 <h2>Top 250 TV Shows</h2>
+<a class="nav-item nav-link" routerLink="/toptv">See all</a>
 <div class="row">
-    <div class="card mb-2"  *ngFor = "let toptv of lstOfTop250TvShows" style="width: 18rem;">
+    <div class="col-md-3 mb-2 mt-2"  *ngFor = "let toptv of lstOfTop250TvShows" style="width: 18rem;">
         <div class="card-body" >
           <img src="{{toptv.image}}" class="card-img-top" alt="..." height="250">
           <h5 class="card-title">{{toptv.title}}</h5>
@@ -40,9 +43,9 @@
 
 <!-- Displaying Popular Movies -->
 <h2>Popular  Movies</h2>
-
+<a class="nav-item nav-link" routerLink="/popularmovies">See all</a>
 <div class="row">
-    <div class="card mb-2"  *ngFor="let popmovie of lstOfPopularMovies" style="width: 18rem;">
+    <div class="col-md-3 mb-2 mt-2"  *ngFor="let popmovie of lstOfPopularMovies" style="width: 18rem;">
         <div class="card-body" >
           <img src="{{popmovie.image}}" class="card-img-top" alt="..." height="250">
           <h5 class="card-title">{{popmovie.title}}</h5>
@@ -54,8 +57,9 @@
 
 <!-- Displaying Popular Tv Shows -->
 <h2>Popular  Tv Shows</h2>
+<a class="nav-item nav-link" routerLink="/populartv">See all</a>
 <div class="row">
-    <div class="card mb-2" *ngFor="let poptv of lstOfPopularTvs" style="width: 18rem;">
+    <div class="col-md-3 mb-2 mt-2"  *ngFor="let poptv of lstOfPopularTvs" style="width: 18rem;">
         <div class="card-body" >
           <img src="{{poptv.image}}" class="card-img-top" alt="..." height="250">
           <h5 class="card-title">{{poptv.title}}</h5>
@@ -69,8 +73,9 @@
 <!-- Displaying InThearters Movies -->
 
 <h2>In Thearters</h2>
+<a class="nav-item nav-link" routerLink="/thearter">See all</a>
 <div class="row">
-    <div class="card mb-2" *ngFor="let intheat of lstOfThearters" style="width: 18rem;">
+    <div class="col-md-3 mb-2 mt-2"  *ngFor="let intheat of lstOfThearters" style="width: 18rem;">
         <div class="card-body" >
           <img src="{{intheat.image}}" class="card-img-top" alt="..." height="250">
           <h5 class="card-title">{{intheat.title}}</h5>
