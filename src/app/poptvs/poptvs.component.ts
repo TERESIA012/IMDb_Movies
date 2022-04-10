@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MoviesapiService } from '../services/moviesapi.service';
-import { PopularTvApi } from '../classes/popular-tv-api-class';
+import { PopularTvApi } from '../classes/popular-tv-api';
 
 @Component({
   selector: 'app-poptvs',

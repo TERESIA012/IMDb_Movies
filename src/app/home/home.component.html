@@ -3,10 +3,27 @@
 <!-- Displays search button -->
 <div class="form">
   <form class="d-flex">
-    <input class="form-control me-2 " type="search" name="" ngModel="movieTitle" placeholder="Search"
+    <input class="form-control me-2 " type="search" name="movieTitle" [(ngModel)]="movieTitle" placeholder="Search"
       aria-label="Search">
-    <button class="btn btn-outline-success" type="submit">Search</button>
+    <button class="btn btn-outline-success" (click)="getMovie()" type="submit">Search</button>
   </form>
+
+  <!-- Serched Movies -->
+
+  <div class="row">
+    <div class="col-md-3 mb-2 mt-2" *ngFor="let smovie of lstOfMovieTitles ">
+      <div class="card mb-2" style="width: 18rem;">
+        <div class="card-body">
+          <img src="{{smovie.image}}" class="card-img-top" alt="..." height="250">
+          <h5 class="card-title">{{smovie.title}}</h5>
+          <h6 class="card-subtitle mb-2 text-dark">{{smovie.year}}</h6>
+          <h6 class="card-subtitle mb-2 text-dark">{{smovie.description}}</h6>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+
 
 </div>
 

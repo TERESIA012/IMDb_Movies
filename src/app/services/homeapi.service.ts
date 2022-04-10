@@ -27,6 +27,16 @@ export class HomeapiService {
     return this.httpClient.get(this.baseUrl+ 'MostPopularMovies/' + environment.apiKey)
   }
 
+// Serach api url
+// https://imdb-api.com/en/API/SearchTitle/k_bo7qtua2/inception%202010
+
+  searchMovie(movieTitle:any):Observable<any>{
+    console.log(movieTitle)
+    return this.httpClient.get(this.baseUrl+ 'SearchTitle/' + environment.apiKey + '/' + movieTitle)
+  }
+
+  
+
 
 
 }

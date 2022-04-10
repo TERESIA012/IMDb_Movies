@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MoviesapiService } from '../services/moviesapi.service';
 import { HomeApiClass } from '../classes/home-api-class';
 import { TheaterApiClass } from '../classes/theater-api-class';
-import { PopularTvApi } from '../classes/popular-tv-api-class';
+import { PopularTvApi } from '../classes/popular-tv-api';
 import { PopularMoviesApi } from '../classes/popular-movies-api-class';
 import { Top250MoviesApi } from '../classes/top250-movies-api-class';
 import { Top250TvShowsApi } from '../classes/top250-tv-shows-api-class';

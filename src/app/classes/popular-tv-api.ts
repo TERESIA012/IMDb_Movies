@@ -1,4 +1,4 @@
-export class Top250MoviesApi{
+export class PopularTvApi{
     constructor(
 
        
@@ -6,7 +6,9 @@ export class Top250MoviesApi{
         public year:string,
         public image:string,
      
+       
         
+        
+
     ){}
 }
-

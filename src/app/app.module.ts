@@ -13,6 +13,7 @@ import { PopmoviesComponent } from './popmovies/popmovies.component';
 import { PoptvsComponent } from './poptvs/poptvs.component';
 import { TheaterComponent } from './theater/theater.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -27,13 +28,13 @@ import { NavbarComponent } from './navbar/navbar.component';
     PoptvsComponent,
     TheaterComponent,
     NavbarComponent,
-    
+   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule ,
-
+    FormsModule
   ],
   providers: [HomeapiService],
   bootstrap: [AppComponent]
