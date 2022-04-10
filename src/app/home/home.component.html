@@ -1,31 +1,45 @@
+<br>
+
+<!-- Displays search button -->
+<div class="form">
+  <form class="d-flex">
+    <input class="form-control me-2 " type="search" name="" ngModel="movieTitle" placeholder="Search"
+      aria-label="Search">
+    <button class="btn btn-outline-success" type="submit">Search</button>
+  </form>
+
+</div>
+
+<hr>
+
 <!-- Displaying Coming Soon Movies -->
 <h2>Coming Soon</h2>
 <div class="row">
-    <div class="col-md-3 mb-2 mt-2"  *ngFor="let upcome of lstUpComingMovies  ">
-        <div class="card mb-2" style="width: 18rem;">
-            <div class="card-body" >
-              <img src="{{upcome.image}}" class="card-img-top" alt="..." height="250">
-              <h5 class="card-title">{{upcome.title}}</h5>
-              <h6 class="card-subtitle mb-2 text-dark">{{upcome.year}}</h6>
-            </div>
-          </div>
+  <div class="col-md-3 mb-2 mt-2" *ngFor="let upcome of lstUpComingMovies  ">
+    <div class="card mb-2" style="width: 18rem;">
+      <div class="card-body">
+        <img src="{{upcome.image}}" class="card-img-top" alt="..." height="250">
+        <h5 class="card-title">{{upcome.title}}</h5>
+        <h6 class="card-subtitle mb-2 text-dark">{{upcome.year}}</h6>
+      </div>
     </div>
-   
+  </div>
+
 </div>
 
-   
+
 <!-- Displaying InThearters Movies -->
 <h2>In Thearters</h2>
 
 <div class="row">
-   
-<div class="col-md-3 mb-2 mt-2"  *ngFor="let intheat of lstOfThearters" style="width: 18rem;">
-  <div class="card-body" >
-    <img src="{{intheat.image}}" class="card-img-top" alt="..." height="250">
-    <h5 class="card-title">{{intheat.title}}</h5>
-    <h6 class="card-subtitle mb-2 text-dark">{{intheat.year}}</h6>
+
+  <div class="col-md-3 mb-2 mt-2" *ngFor="let intheat of lstOfThearters" style="width: 18rem;">
+    <div class="card-body">
+      <img src="{{intheat.image}}" class="card-img-top" alt="..." height="250">
+      <h5 class="card-title">{{intheat.title}}</h5>
+      <h6 class="card-subtitle mb-2 text-dark">{{intheat.year}}</h6>
+    </div>
   </div>
-</div>
 </div>
 
 
@@ -34,27 +48,22 @@
 
 <h2>Popular</h2>
 <div class="row">
-    <div class="col-md-3 mb-2 mt-2"  *ngFor="let poptv of lstOfPopularTvs" style="width: 18rem;">
-        <div class="card-body" >
-          <img src="{{poptv.image}}" class="card-img-top" alt="..." height="250">
-          <h5 class="card-title">{{poptv.title}}</h5>
-          <h6 class="card-subtitle mb-2 text-dark">{{poptv.year}}</h6>
-        </div>
-      </div>
+  <div class="col-md-3 mb-2 mt-2" *ngFor="let poptv of lstOfPopularTvs" style="width: 18rem;">
+    <div class="card-body">
+      <img src="{{poptv.image}}" class="card-img-top" alt="..." height="250">
+      <h5 class="card-title">{{poptv.title}}</h5>
+      <h6 class="card-subtitle mb-2 text-dark">{{poptv.year}}</h6>
+    </div>
+  </div>
 </div>
 
 
 <div class="row">
-    <div class="col-md-3 mb-2 mt-2"   *ngFor="let popmovie of lstOfPopularMovies" style="width: 18rem;">
-        <div class="card-body" >
-          <img src="{{popmovie.image}}" class="card-img-top" alt="..." height="250">
-          <h5 class="card-title">{{popmovie.title}}</h5>
-          <h6 class="card-subtitle mb-2 text-dark">{{popmovie.year}}</h6>
-        </div>
-      </div>
+  <div class="col-md-3 mb-2 mt-2" *ngFor="let popmovie of lstOfPopularMovies" style="width: 18rem;">
+    <div class="card-body">
+      <img src="{{popmovie.image}}" class="card-img-top" alt="..." height="250">
+      <h5 class="card-title">{{popmovie.title}}</h5>
+      <h6 class="card-subtitle mb-2 text-dark">{{popmovie.year}}</h6>
+    </div>
+  </div>
 </div>
-  
-
-
-
-

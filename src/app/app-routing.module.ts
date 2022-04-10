@@ -10,7 +10,7 @@ import { TheaterComponent } from './theater/theater.component';
 
 
 const routes: Routes = [
-  { path:'home',component:HomeComponent },
+  { path:'',component:HomeComponent },
   { path:'movies',component:MoviesComponent },
   { path:'topmovies',component:TopmoviesComponent },
   { path:'toptv',component:ToptvsComponent },
