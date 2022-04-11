@@ -12,19 +12,20 @@ export class HomeapiService {
   constructor(private httpClient:HttpClient){}
 
   baseUrl="https://imdb-api.com/en/API/"
+  
 
   getUpComingMovies():Observable<any>{
-    return this.httpClient.get(this.baseUrl+'ComingSoon/' + environment.apiKey)
+    return this.httpClient.get(this.baseUrl+'ComingSoon/' + environment.firebase.apiKey)
 
   }
   getInTheaters():Observable<any>{
-    return this.httpClient.get(this.baseUrl+ 'InTheaters/' + environment.apiKey)
+    return this.httpClient.get(this.baseUrl+ 'InTheaters/' + environment.firebase.apiKey)
   }
   getPopularTv():Observable<any>{
-    return this.httpClient.get(this.baseUrl+ 'MostPopularTvs/' + environment.apiKey)
+    return this.httpClient.get(this.baseUrl+ 'MostPopularTvs/' + environment.firebase.apiKey)
   }
   getPopularMovies():Observable<any>{
-    return this.httpClient.get(this.baseUrl+ 'MostPopularMovies/' + environment.apiKey)
+    return this.httpClient.get(this.baseUrl+ 'MostPopularMovies/' + environment.firebase.apiKey)
   }
 
 // Serach api url
@@ -32,7 +33,7 @@ export class HomeapiService {
 
   searchMovie(movieTitle:any):Observable<any>{
     console.log(movieTitle)
-    return this.httpClient.get(this.baseUrl+ 'SearchTitle/' + environment.apiKey + '/' + movieTitle)
+    return this.httpClient.get(this.baseUrl+ 'SearchTitle/' + environment.firebase.apiKey + '/' + movieTitle)
   }
 
   
