@@ -1,6 +1,34 @@
 # Movies
-
+The project is a clone of IMDb Movies website  that involved fetching data from the IMDb site.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.6.
+
+## Known Bug
+No Known bugs at the moment
+### Importance notice
+Kindly navigate to other pages using the above navbar provided.
+## Installation
+
+Install movie application with npm
+@@ -35,7 +40,7 @@ To deploy this project run
+
+<!-- ``` -->
+
+###  Live Link
+
+
+## Technology Used
+
+** Framework: ** Angular version 11.2.6
+### Developed with
+**Structure:** Bootstrap, HTML ,CSS
+**Behaviour:** Typescript
+**Style:** CSS
+## Color Reference
+| Color             | Hex                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+|  White | ![#ffffff](https://via.placeholder.com/10/ffffff?text=+) #ffffff |
+
+
 
 ## Development server
 
@@ -25,3 +53,11 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+## Author
+Design and developed by: [@Teresia King'ori](https://github.com/TERESIA012)
+
+
+# Licence
+## &copy;2022
