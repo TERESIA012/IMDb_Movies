@@ -20,7 +20,7 @@ Install movie application with npm
 
 ** Framework: ** Angular version 11.2.6
 ### Developed with
-**Structure:** Bootstrap, HTML ,CSS
+**Structure:** Bootstrap, HTML 
 **Behaviour:** Typescript
 **Style:** CSS
 ## Color Reference
